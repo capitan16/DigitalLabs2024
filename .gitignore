@@ -1,3 +1,7 @@
 BasicCycloneImplementation/build/*
 Lab2/build/*
 *.v.out
+Lab2/implementacion/db/*
+Lab2/implementacion/incremental_db/*
+Lab2/implementacion/output_files/*
+Lab2/implementacion/lab2.qws
