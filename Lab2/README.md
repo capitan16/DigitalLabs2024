@@ -198,5 +198,34 @@ Se realizaron pruebas unitarias colocando un nivel para cada una de las regiones
 Como ya se tiene el sumador y la forma de hacer  comparaciones para diferentes niveles de carga se procede a implementar todo en un solo modulo que llamamos [lab2](./lab2.v).
 Por otra parte en el archivo [lab2_tb](./lab2_tb.v) es donde esta los casos de prueba  y al ejecutarlo se obtiene lo siguiente:
 
-###  Comprobacion de nivel critico de bateria:
-Como ya se estbalecio previamente este nivel,se
+###  Comprobacion de nivel critico banco de baterias:
+Como ya se estbalecio previamente en este ocurre un cambio logico si la carga es menor al 10% es decir 3 en decimal:
+
+![Carga critica ](cargacritica0.png)
+
+Como se puede apreciar en la imagen anterior  cuando la suma esta entre 0 y 2 se tiene un cero logico esto debido a la logica negada de la FPGA
+
+![Carga critica ](cargacirticanivel3.png)
+
+Ahora una vez alcanza el valor tres en la suma que es el 10%  se puede apreciar el cambio a 1
+
+###  Comprobacion de nivel bajo banco de baterias:
+Esta verifcaciòn se establece del 10% al 30% es decir entre 0 y 9 valdra 0 y en otros valores vadra 1  :
+
+![Carga baja ](cargabaja.png)
+
+Como se puede apreciar en la imagen en el intervalo de interes es 0 dada la logica negada y en los otros intervalos es uno 
+###  Comprobacion de nivel medio banco de baterias:
+Esta verificación se establece en un rango del 30% al 60%, lo que corresponde a valores mayores a 9 (es decir, a partir de 10) y menores o iguales a 18. En este rango, la verificación tendrá un valor de 0, mientras que para otros valores será igual a 1.
+
+![Carga media ](Cargamedia.png)
+
+La imagen anterior muestra la salida esperada
+###  Comprobacion de nivel alto banco de baterias:
+Esta verificación se establece en un rango del 60% al 99%, lo que corresponde a valores mayores a 18 (es decir, a partir de 19) y menores o iguales a 29. En este rango, la verificación tendrá un valor de 0, mientras que para otros valores será igual a 1.
+
+![Carga Alta ](cargaAlto.png)
+###  Comprobacion de nivel 100% banco de baterias:
+Se verifica que el banco este totalmente cargado es decir valdra 0 en 30:
+![Carga Completa ](cargafull.png)
+
