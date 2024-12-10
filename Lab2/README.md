@@ -34,8 +34,16 @@ fue implementado de forma comportamental usando múltiples ramas implementadas m
 
 ### Sumador de 4 bits
 
+
+La implementación se realizó mediante 
+![full_adder_tb](full_adder_tb.png)
+
 ### Comparación
 
 se implementó una declaración _always_ dentro de la cual se colocaron declaraciones _if-else if_ con operadores de comparación y lógicos ver: [modulo comparador](./comparator.v)
 
 Se realizaron pruebas unitarias colocando un nivel para cada una de las regiones definidas y se verificó la respuesta de las señales de salida como se muestra en la siguiente gráfica ![prueba unitaria del comparador](./comparator_tb.png)
+
+## Integración
+
+Se implementó y realizaron pruebas de ...
